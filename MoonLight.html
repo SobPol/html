@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Mooonlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="file:///D:/cade/moon-11530979581o38v6cethx.png">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">SobPol</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="file:///C:/Users/user/Downloads/mountains_behind.png" id="mountains_behind">
+      <h2 id="text">MoodLight</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="file:///D:/cade/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>MooonLight</h2>
+      <p>The moon is Earth's most constant companion and the easiest celestial object to find in the night sky.
+
+The rhythm of the phases of the moon has guided humanity for millennia; for instance, calendar months are roughly equal to the time it takes to go from one full moon to the next. But the moon's orbit and phases are mysteries to many. For example, the moon always shows us the same face, but how much of it we see depends on the moon's position in relation to Earth and the sun.
+
+Though a satellite of Earth, the moon, with a diameter of about 2,159 miles (3,475 kilometers), is bigger than Pluto. (Four other moons in our solar system are even bigger than ours.)
+
+The moon is a bit more than one-fourth (27%) the size of Earth, a much larger ratio (1:4) than any other moons to their planets. This means the moon has a great effect on the planet and may even be the factor that makes life on Earth possible.
+
+<br><br></p>
+<h2>How did the moon form?</h2>
+<p>There are various theories about how the moon was created, but recent evidence indicates it formed when a huge collision tore a chunk of the primitive molten Earth away, sending the raw ingredients for the moon into orbit.
+Advertisement
+Scientists have suggested the impactor was roughly 10% the mass of Earth, or about the size of Mars. Because Earth and the moon are so similar in composition, researchers have concluded that the impact must have occurred about 95 million years after the formation of the solar system, give or take 32 million years. (The solar system is roughly 4.6 billion years old.)
+New studies in 2015 gave further weight to this theory, based on simulations of planetary orbits in the early solar system, as well as newly uncovered differences in the abundance of the element tungsten-182 detected in the Earth and the moon.
+Although the large impact theory dominates the scientific community's discussion, there are several other ideas for the moon's formation. These include that the Earth captured the moon, that the moon fissioned out of the Earth, or that Earth may even have stolen the moon from Venus, according to a recent theory. <br><br></p>
+  </div>
+<script>
+  let stars=document.getElementById('stars');
+  let moon=document.getElementById('moon');
+  let mountains_behind=document.getElementById('mountains_behind');
+  let text=document.getElementById('text');
+  let btn =document.getElementById('btn')
+  let mountains_front=document.getElementById('mountains_front');
+  let header = document.querySelector('header');
+
+
+  window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    stars.style.left =value * 0.25+'px';
+    moon.style.top =value * 1.05 +'px';
+    mountains_behind.style.top =value * 0.5+'px';
+    mountains_front.style.top=value * 0 +'px';
+    text.style.marginRight =value * 4 +'px';
+    text.style.marginTop =value * 1.5 +'px';
+    btn.style.marginTop =value * 1.5 +'px';
+    header.style.top =value * 0.5 +'px';
+})
+    </script>
+  </body>
+</html>
